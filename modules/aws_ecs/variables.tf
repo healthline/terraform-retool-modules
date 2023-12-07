@@ -111,6 +111,12 @@ variable "rds_username" {
   description = "Master username for the RDS instance. Defaults to Retool."
 }
 
+variable "rds_engine_version" {
+  type        = string
+  default     = "13"
+  description = "Postgres engine version.  Defaults to 13"
+}
+
 variable "rds_instance_class" {
   type        = string
   default     = "db.m6g.large"
