@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-retool-modules
+  description: fork of https://github.com/tryretool/terraform-retool-modules
+spec:
+  type: terraform-module # can be one of: service, library, website, iac-pipeline
+  lifecycle: production # can be one of: experimental, production, deprecated
+  owner: team-core-products-and-services # your existing tech team in Backstage, i.e. team-developer-platforms
